@@ -1,0 +1,172 @@
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.default {
+    padding: 120px 0;
+
+}
+
+
+
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 96px;
+}
+
+.header .gnb {
+    margin-left: auto;
+
+}
+
+.header .gnb>ul {
+    display: flex;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+    line-height: 96px;
+    padding: 0 40px;
+}
+
+.header .gnb>ul>li ul {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+
+    transform: translate(-50%, 0);
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 8px;
+
+    display: none;
+}
+
+.header .gnb>ul:hover>li ul {
+    display: block;
+}
+
+.header .gnb>ul ul a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.header .gnb>ul>li ul a {
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.header .utils {
+    position: relative;
+    margin-left: 240px;
+}
+
+.header .utils::after {
+    content: "";
+    position: absolute;
+    top: 96px;
+    right: 0;
+
+    width: 300px;
+    height: 200px;
+
+    background: url(../images/index_bg02.jpg) no-repeat center/cover;
+
+
+    display: none;
+    z-index: 10;
+
+    width: 400px;
+    height: 700px;
+
+}
+
+/* hover 시 나타남 */
+.header .utils:hover::after {
+    display: block;
+}
+
+
+
+
+.title {
+    max-width: 1440px;
+    margin: 0 auto;
+
+
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+
+
+
+
+.main_visual {
+    height: calc(100vh - 96px);
+    background: url(../images/index_bg01.jpg);
+}
+
+.main_visual .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.main_visual .slg h2 {
+    font-size: 72px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.main_visual .slg p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+
+.main_inpo .inner {
+    display: flex;
+    margin-top: 64px;
+    gap: 8px;
+}
+
+.main_inpo .txt_box {
+    margin-top: 24px;
+}
+
+.main_inpo .txt_box p {
+    margin-top: 8px;
+    line-height: 24px;
+}
+
+footer {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
